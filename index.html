@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystals Collector</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Script -->
+    <script type="text/javascript" src="assets/javascript/games.js"></script>
+</head>
+
+<body>
+
+
+
+
+    <div id="gameTitle">
+        <h1>Crystals Collector!</h1>
+    </div>
+
+    <!-- GAME RULES TEXT -->
+    <div id="gameRules">
+        You will be given a random number at the start of the game.
+        <br>
+        <br>
+        There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your
+        total
+        score.
+        <br>
+        <br>
+        You will win the game by matching your total score to a random number. You lose the game if your total
+        score
+        goes above teh transom number.
+        <br>
+        <br>
+        The value of each crystal is hidden from view until you click on it.
+        <br>
+        <br>
+        Each time when the game starts, the game will change the value of each crystal.
+        <br>
+        <br>
+    </div>
+
+    <!-- Target Number Container -->
+    <div id="targetNumberDiv">
+        <h1>Target Number!</h1>
+    </div>
+    <!-- WIN/LOSS Tally Container -->
+    <div id="winLossDiv">
+        <p>Wins: 0</p>
+        <p>Losses: 0</p>
+    </div>
+
+    <!-- CRYSTAL BUTTONS -->
+    <div id="buttons">
+        <button id="crystalButton1">
+            <h2>First Crystal</h2>
+            <img src="assets/images/image_01.png" />
+        </button>
+        <button id="crystalButton2">
+            <h2>Second Crystal</h2>
+            <img src="assets/images/image_02.png" />
+        </button>
+        <button id="crystalButton3">
+            <h2>Third Crystal</h2>
+            <img src="assets/images/image_03.png" />
+        </button>
+        <button id="crystalButton3">
+            <h2>Fourth Crystal</h2>
+            <img src="assets/images/image_04.png" />
+        </button>
+    </div>
+
+    <!-- Current Total Score Text Container -->
+    <div id="totalScoreText">
+        <h1>Your total score: </h1>
+    </div>
+
+    <!-- Current Total Score Value Container -->
+    <div id="totalScoreValue">
+        <h1>0</h1>
+    </div>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#click-me").on("click", function () {
+                alert("I've been clicked!");
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>
